@@ -12,12 +12,6 @@ storage, and simulated emergency-response channels. It is designed as a
 research and hackathon prototype---not as a medical device or a
 production emergency-response service.
 
-> \[!WARNING\] **Safety notice:** Fall Guardian is not clinically
-> validated and must not be relied upon to summon help. Evaluation to
-> date uses synthetic video only. Emergency-response channels are
-> simulated, and the AWS integration has not been verified against a
-> deployed AWS environment.
-
 ## Table of contents
 
 -   [Project goals](#project-goals)

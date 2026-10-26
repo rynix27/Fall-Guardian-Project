@@ -1,0 +1,17 @@
+{
+  "name": "fall-guardian-fall-detector-trigger",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AWS Lambda handler for fall events. Requires AWS credentials/resources to run; tests cover pure functions only.",
+  "main": "fall_detector_trigger.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "check": "node --check fall_detector_trigger.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1692.0"
+  }
+}

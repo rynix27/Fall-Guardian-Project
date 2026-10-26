@@ -1,0 +1,13 @@
+{
+  "description": "approved naive timestamp",
+  "kind": "approved",
+  "expect_valid": false,
+  "expected_code": "INVALID_TIMESTAMP",
+  "payload": {
+    "user_id": "u-42",
+    "event_type": "vision_fall",
+    "timestamp": "2026-10-20",
+    "decision": "APPROVED",
+    "idempotency_key": "run-abcdef123456"
+  }
+}

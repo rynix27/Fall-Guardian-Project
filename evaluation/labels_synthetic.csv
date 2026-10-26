@@ -1,0 +1,8 @@
+path,label,dataset
+evaluation/clips_synthetic/synthetic_fall.mp4,1,synthetic
+evaluation/clips_synthetic/synthetic_slow_fall.mp4,1,synthetic
+evaluation/clips_synthetic/synthetic_fall_then_up.mp4,1,synthetic
+evaluation/clips_synthetic/synthetic_long_lie.mp4,1,synthetic
+evaluation/clips_synthetic/synthetic_sit_down.mp4,0,synthetic
+evaluation/clips_synthetic/synthetic_bend.mp4,0,synthetic
+evaluation/clips_synthetic/synthetic_walk.mp4,0,synthetic

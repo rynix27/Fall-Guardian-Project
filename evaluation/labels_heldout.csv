@@ -1,0 +1,17 @@
+path,label,dataset
+evaluation/clips_heldout/fall_s07.mp4,1,heldout
+evaluation/clips_heldout/slow_fall_s07.mp4,1,heldout
+evaluation/clips_heldout/fall_then_up_s07.mp4,1,heldout
+evaluation/clips_heldout/long_lie_s07.mp4,1,heldout
+evaluation/clips_heldout/intentional_lie_s07.mp4,0,heldout
+evaluation/clips_heldout/sit_down_s07.mp4,0,heldout
+evaluation/clips_heldout/bend_s07.mp4,0,heldout
+evaluation/clips_heldout/walk_s07.mp4,0,heldout
+evaluation/clips_heldout/fall_s13.mp4,1,heldout
+evaluation/clips_heldout/slow_fall_s13.mp4,1,heldout
+evaluation/clips_heldout/fall_then_up_s13.mp4,1,heldout
+evaluation/clips_heldout/long_lie_s13.mp4,1,heldout
+evaluation/clips_heldout/intentional_lie_s13.mp4,0,heldout
+evaluation/clips_heldout/sit_down_s13.mp4,0,heldout
+evaluation/clips_heldout/bend_s13.mp4,0,heldout
+evaluation/clips_heldout/walk_s13.mp4,0,heldout

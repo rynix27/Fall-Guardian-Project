@@ -1,0 +1,23 @@
+{
+  "description": "candidate bad event id",
+  "kind": "candidate",
+  "expect_valid": false,
+  "expected_code": "INVALID_IDENTIFIER",
+  "payload": {
+    "schema_version": "1.0",
+    "event_id": "../../etc",
+    "timestamp": "2026-10-20T10:00:00Z",
+    "source": "vision_pipeline",
+    "detector_type": "threshold_heuristic_v1",
+    "t_s": 7.2,
+    "rule": "upright->lying within window, centroid dropped, lying held",
+    "severity": 6,
+    "detection_status": "CANDIDATE",
+    "evidence": "NO_RECOVERY_OBSERVED",
+    "approval_status": "PENDING",
+    "metadata": {
+      "clip": "synthetic",
+      "scale": 1
+    }
+  }
+}

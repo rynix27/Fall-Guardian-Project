@@ -1,0 +1,230 @@
+{
+  "n_clips": 16,
+  "TP": 7,
+  "FP": 1,
+  "TN": 7,
+  "FN": 1,
+  "sensitivity": 0.875,
+  "specificity": 0.875,
+  "precision": 0.875,
+  "sensitivity_95ci": [
+    0.5291051942301385,
+    0.9775830911367039
+  ],
+  "specificity_95ci": [
+    0.5291051942301385,
+    0.9775830911367039
+  ],
+  "clips": [
+    {
+      "path": "evaluation/clips_heldout/fall_s07.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.205,
+          "aspect_after": 0.344,
+          "centroid_drop": 0.266,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/slow_fall_s07.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 0,
+      "outcome": "FN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/fall_then_up_s07.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.205,
+          "aspect_after": 0.83,
+          "centroid_drop": 0.266,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/long_lie_s07.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.205,
+          "aspect_after": 0.344,
+          "centroid_drop": 0.266,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/intentional_lie_s07.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/sit_down_s07.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/bend_s07.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/walk_s07.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/fall_s13.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.225,
+          "aspect_after": 0.339,
+          "centroid_drop": 0.27,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/slow_fall_s13.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 119,
+          "t_s": 7.933,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.225,
+          "aspect_after": 1.026,
+          "centroid_drop": 0.27,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/fall_then_up_s13.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.225,
+          "aspect_after": 0.816,
+          "centroid_drop": 0.27,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/long_lie_s13.mp4",
+      "dataset": "heldout",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.225,
+          "aspect_after": 0.339,
+          "centroid_drop": 0.27,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/intentional_lie_s13.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 1,
+      "outcome": "FP",
+      "events": [
+        {
+          "frame_idx": 119,
+          "t_s": 7.933,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.225,
+          "aspect_after": 1.026,
+          "centroid_drop": 0.27,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_heldout/sit_down_s13.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/bend_s13.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_heldout/walk_s13.mp4",
+      "dataset": "heldout",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    }
+  ],
+  "generated_utc": "2026-10-26T21:43:37.543106+00:00",
+  "note": "Very small sample. Intervals are wide; these numbers describe this clip set only and do not estimate real-world performance."
+}

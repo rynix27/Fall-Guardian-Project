@@ -1,0 +1,24 @@
+{
+  "description": "candidate nested metadata",
+  "kind": "candidate",
+  "expect_valid": false,
+  "expected_code": "INVALID_METADATA",
+  "payload": {
+    "schema_version": "1.0",
+    "event_id": "evt-0001-abcd",
+    "timestamp": "2026-10-20T10:00:00Z",
+    "source": "vision_pipeline",
+    "detector_type": "threshold_heuristic_v1",
+    "t_s": 7.2,
+    "rule": "upright->lying within window, centroid dropped, lying held",
+    "severity": 6,
+    "detection_status": "CANDIDATE",
+    "evidence": "NO_RECOVERY_OBSERVED",
+    "approval_status": "PENDING",
+    "metadata": {
+      "a": {
+        "b": 1
+      }
+    }
+  }
+}

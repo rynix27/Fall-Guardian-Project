@@ -1,0 +1,29 @@
+digraph FallGuardian {
+  rankdir=LR;
+  graph [fontname="Helvetica", fontsize=12, pad=0.3];
+  node  [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#FFFFFF"];
+  edge  [fontname="Helvetica", fontsize=10];
+
+  cam   [label="Video input\n(video file; webcam not tested)\nIMPLEMENTED", fillcolor="#E8F1FB"];
+  cv    [label="OpenCV 5 pipeline\nMOG2 background subtraction\ncontours + posture rules\nIMPLEMENTED (prototype rules)", fillcolor="#E8F1FB"];
+  ev    [label="Candidate fall event\n(JSON, time + rule)", shape=note];
+  evid  [label="Evidence window\nexamine 5 s after event\nposture: recovered / no recovery / unresolved\nIMPLEMENTED (deterministic rules)", fillcolor="#E8F1FB"];
+  agent [label="Approval agent\nasks caregiver, waits for decision\nIMPLEMENTED", fillcolor="#E8F1FB"];
+  ledger [label="Approval ledger\none decision per request\nexpiry, duplicates, conflicts\nIMPLEMENTED (in memory)", fillcolor="#E8F1FB"];
+  human [label="Caregiver\n(human in the loop)\nSIMULATED notifier", fillcolor="#FFF4D6", style="rounded,filled,dashed"];
+  wf    [label="Emergency workflow\nSMS / 911 / lock / dashboard\nSIMULATED (DEMO mode)", fillcolor="#FFF4D6", style="rounded,filled,dashed"];
+  trace [label="Trace log\n(JSON lines)", shape=cylinder, fillcolor="#EEEEEE"];
+  ctr   [label="Shared contract\nschema 1.0, stable error codes\nIMPLEMENTED (fixtures + drift test)", shape=note, fillcolor="#E8F1FB"];
+  lam   [label="AWS Lambda\nfall_event_handler.py\nidempotent (conditional write)\nCODE TESTED, NOT DEPLOYED", fillcolor="#FDE2E2", style="rounded,filled,dashed"];
+  ddb   [label="DynamoDB table\nAPPROVED events only\nNOT DEPLOYED", shape=cylinder, fillcolor="#FDE2E2", style="filled,dashed"];
+
+  cam -> cv -> ev -> evid -> agent;
+  agent -> ledger [label="open request"];
+  ledger -> agent [label="decision outcome", style=dashed];
+  agent -> human [label="approval request"];
+  human -> agent [label="APPROVED / DENIED / timeout", style=dashed];
+  agent -> wf [label="only if APPROVED"];
+  agent -> lam [label="only if APPROVED", style=dashed];
+  lam -> ddb [style=dashed];
+  agent -> trace [label="every step"];
+}

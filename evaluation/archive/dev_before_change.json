@@ -1,0 +1,98 @@
+{
+  "n_clips": 7,
+  "TP": 2,
+  "FP": 0,
+  "TN": 3,
+  "FN": 2,
+  "sensitivity": 0.5,
+  "specificity": 1.0,
+  "precision": 1.0,
+  "sensitivity_95ci": [
+    0.15003570882017145,
+    0.8499642911798285
+  ],
+  "specificity_95ci": [
+    0.4384939195509822,
+    1.0
+  ],
+  "clips": [
+    {
+      "path": "evaluation/clips_synthetic/synthetic_fall.mp4",
+      "dataset": "synthetic",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.218,
+          "aspect_after": 0.341,
+          "centroid_drop": 0.269,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_synthetic/synthetic_slow_fall.mp4",
+      "dataset": "synthetic",
+      "label": 1,
+      "predicted": 0,
+      "outcome": "FN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_synthetic/synthetic_fall_then_up.mp4",
+      "dataset": "synthetic",
+      "label": 1,
+      "predicted": 0,
+      "outcome": "FN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_synthetic/synthetic_long_lie.mp4",
+      "dataset": "synthetic",
+      "label": 1,
+      "predicted": 1,
+      "outcome": "TP",
+      "events": [
+        {
+          "frame_idx": 108,
+          "t_s": 7.2,
+          "rule": "upright->lying within window, centroid dropped, lying held",
+          "aspect_before": 1.218,
+          "aspect_after": 0.352,
+          "centroid_drop": 0.261,
+          "hold_s": 1.533
+        }
+      ]
+    },
+    {
+      "path": "evaluation/clips_synthetic/synthetic_sit_down.mp4",
+      "dataset": "synthetic",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_synthetic/synthetic_bend.mp4",
+      "dataset": "synthetic",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    },
+    {
+      "path": "evaluation/clips_synthetic/synthetic_walk.mp4",
+      "dataset": "synthetic",
+      "label": 0,
+      "predicted": 0,
+      "outcome": "TN",
+      "events": []
+    }
+  ],
+  "generated_utc": "2026-10-22T23:02:53.716055+00:00",
+  "note": "Very small sample. Intervals are wide; these numbers describe this clip set only and do not estimate real-world performance."
+}

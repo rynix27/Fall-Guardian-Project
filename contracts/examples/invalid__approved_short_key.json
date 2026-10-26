@@ -1,0 +1,13 @@
+{
+  "description": "approved short key",
+  "kind": "approved",
+  "expect_valid": false,
+  "expected_code": "INVALID_IDENTIFIER",
+  "payload": {
+    "user_id": "u-42",
+    "event_type": "vision_fall",
+    "timestamp": "2026-10-20T10:00:00Z",
+    "decision": "APPROVED",
+    "idempotency_key": "short"
+  }
+}

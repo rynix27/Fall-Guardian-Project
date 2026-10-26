@@ -1,0 +1,27 @@
+{
+  "clip": "fall_720p.mp4",
+  "clip_resolution": "1280x720",
+  "runs": 5,
+  "median_fps": 328.7657141487925,
+  "min_fps": 301.3027191320593,
+  "max_fps": 345.5141064093513,
+  "median_ms_per_frame": 3.041679703703595,
+  "peak_process_memory_mb": 73.0,
+  "events_per_run": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "event_latency_s": 1.5333333333333332,
+  "hardware": {
+    "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "logical_cpus": 1,
+    "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "opencv": "5.0.0",
+    "gpu": "none used (CPU only)"
+  },
+  "note": "Synthetic 320x240 clip, classic OpenCV only, CPU only. Numbers describe this machine and this clip, not a general benchmark."
+}

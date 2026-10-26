@@ -1,0 +1,13 @@
+{
+  "description": "approved denied decision",
+  "kind": "approved",
+  "expect_valid": false,
+  "expected_code": "NOT_APPROVED",
+  "payload": {
+    "user_id": "u-42",
+    "event_type": "vision_fall",
+    "timestamp": "2026-10-20T10:00:00Z",
+    "decision": "DENIED",
+    "idempotency_key": "run-abcdef123456"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "dev_before": {
+    "n": 7,
+    "TP": 2,
+    "FP": 0,
+    "TN": 3,
+    "FN": 2,
+    "precision": 1.0,
+    "recall": 0.5,
+    "specificity": 1.0,
+    "F1": 0.667,
+    "recall_CI": [
+      0.15,
+      0.85
+    ],
+    "spec_CI": [
+      0.438,
+      1.0
+    ],
+    "misses": [
+      "synthetic_slow_fall.mp4",
+      "synthetic_fall_then_up.mp4"
+    ],
+    "false_alarms": []
+  },
+  "dev_after": {
+    "n": 7,
+    "TP": 4,
+    "FP": 0,
+    "TN": 3,
+    "FN": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "F1": 1.0,
+    "recall_CI": [
+      0.51,
+      1.0
+    ],
+    "spec_CI": [
+      0.438,
+      1.0
+    ],
+    "misses": [],
+    "false_alarms": []
+  },
+  "heldout_before": {
+    "n": 16,
+    "TP": 4,
+    "FP": 0,
+    "TN": 8,
+    "FN": 4,
+    "precision": 1.0,
+    "recall": 0.5,
+    "specificity": 1.0,
+    "F1": 0.667,
+    "recall_CI": [
+      0.215,
+      0.785
+    ],
+    "spec_CI": [
+      0.676,
+      1.0
+    ],
+    "misses": [
+      "slow_fall_s07.mp4",
+      "fall_then_up_s07.mp4",
+      "slow_fall_s13.mp4",
+      "fall_then_up_s13.mp4"
+    ],
+    "false_alarms": []
+  },
+  "heldout_after": {
+    "n": 16,
+    "TP": 7,
+    "FP": 1,
+    "TN": 7,
+    "FN": 1,
+    "precision": 0.875,
+    "recall": 0.875,
+    "specificity": 0.875,
+    "F1": 0.875,
+    "recall_CI": [
+      0.529,
+      0.978
+    ],
+    "spec_CI": [
+      0.529,
+      0.978
+    ],
+    "misses": [
+      "slow_fall_s07.mp4"
+    ],
+    "false_alarms": [
+      "intentional_lie_s13.mp4"
+    ]
+  }
+}

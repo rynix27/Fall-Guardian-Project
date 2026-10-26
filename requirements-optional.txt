@@ -1,0 +1,6 @@
+# Optional: needed only for the ML modules (bee_detection/predictive_risk_scorer.py,
+# aws_backend/recovery_predictor.py) and for loading a trained Keras model.
+# NOT verified in this release: they are not exercised by the test suite.
+# Install:  python -m pip install -r requirements-optional.txt
+tensorflow==2.18.1
+pandas==2.2.3
